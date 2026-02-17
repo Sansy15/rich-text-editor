@@ -1,0 +1,282 @@
+.editor-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.editor-inner {
+  position: relative;
+  padding: 20px;
+  min-height: 400px;
+}
+
+.editor-input {
+  outline: none;
+  min-height: 400px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.editor-placeholder {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #999;
+  font-size: 16px;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Error boundary styles */
+.error-boundary {
+  padding: 40px;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.error-boundary h2 {
+  color: #d32f2f;
+  margin-bottom: 16px;
+}
+
+.error-boundary p {
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.error-boundary button {
+  padding: 10px 20px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.error-boundary button:hover {
+  background: #1565c0;
+}
+
+/* Lexical Theme Styles */
+.lexical-text-base {
+  color: #111827;
+}
+
+.lexical-text-bold {
+  font-weight: bold;
+}
+
+.lexical-text-italic {
+  font-style: italic;
+}
+
+.lexical-text-underline {
+  text-decoration: underline;
+}
+
+.lexical-text-strikethrough {
+  text-decoration: line-through;
+}
+
+.lexical-text-code {
+  background-color: #f3f4f6;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 0.875rem;
+}
+
+.lexical-heading-h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+.lexical-heading-h2 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.lexical-heading-h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.lexical-heading-h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.lexical-heading-h5 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.lexical-heading-h6 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.lexical-list-ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+  margin-left: 1rem;
+}
+
+.lexical-list-ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-left: 1rem;
+}
+
+.lexical-list-item {
+  margin: 0.25rem 0;
+}
+
+.lexical-list-nested-item {
+  margin-left: 1.5rem;
+}
+
+.lexical-quote {
+  border-left: 4px solid #d1d5db;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+.lexical-link {
+  color: #2563eb;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.lexical-link:hover {
+  color: #1e40af;
+}
+
+.lexical-table {
+  border-collapse: collapse;
+  border: 1px solid #d1d5db;
+  margin: 1rem 0;
+  width: 100%;
+  background: white;
+}
+
+.lexical-table-cell {
+  border: 1px solid #d1d5db;
+  padding: 8px 16px;
+  min-width: 100px;
+  background: white;
+}
+
+.lexical-table-cell-header {
+  border: 1px solid #d1d5db;
+  padding: 8px 16px;
+  background-color: #f3f4f6;
+  font-weight: bold;
+}
+
+.lexical-code-block {
+  background-color: #f3f4f6;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-family: monospace;
+  font-size: 0.875rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.lexical-paragraph {
+  margin: 0.5rem 0;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .editor-container {
+    background: #1e1e1e;
+  }
+
+  .editor-input {
+    color: #e0e0e0;
+  }
+
+  .editor-placeholder {
+    color: #666;
+  }
+
+  .error-boundary {
+    background: #2a2a2a;
+  }
+
+  .error-boundary h2 {
+    color: #ef5350;
+  }
+
+  .error-boundary p {
+    color: #aaa;
+  }
+
+  .lexical-text-base {
+    color: #f3f4f6;
+  }
+
+  .lexical-text-code {
+    background-color: #374151;
+    color: #f3f4f6;
+  }
+
+  .lexical-quote {
+    border-left-color: #4b5563;
+  }
+
+  .lexical-link {
+    color: #60a5fa;
+  }
+
+  .lexical-link:hover {
+    color: #93c5fd;
+  }
+
+  .lexical-table {
+    border-color: #4b5563;
+    background: #2a2a2a;
+  }
+
+  .lexical-table-cell {
+    border-color: #4b5563;
+    background: #2a2a2a;
+    color: #e0e0e0;
+  }
+
+  .lexical-table-cell-header {
+    border-color: #4b5563;
+    background-color: #374151;
+    color: #e0e0e0;
+  }
+
+  .lexical-code-block {
+    background-color: #374151;
+    color: #f3f4f6;
+  }
+}
